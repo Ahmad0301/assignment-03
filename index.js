@@ -34,6 +34,7 @@ app.get('/read',(req,resp)=>{
     })
 
     app.delete('/delet', (req, resp) => {
+        const filePath = 'new.json';
         
         fs.unlink(filePath, (error) => {
             if (error) {
